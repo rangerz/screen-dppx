@@ -1,0 +1,43 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-family: avenir, sans-serif;
+    line-height: 1.3;
+    text-align: center;
+    color: #eee;
+    background: #333;
+}
+.stage {
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.actor {
+    font-size: 10vw;
+    line-height: 1;
+}
+@media (orientation: portrait) {
+    .actor {
+        font-size: 20vw;
+    }
+}
+.actor__suffix {
+    font-size: 0.5em;
+}
+.chorus {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.chorus td {
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #666;
+}
+.orientation,
+.chorus td:last-child {
+    color: #999;
+}

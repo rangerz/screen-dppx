@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Screen dppx detector</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="stage">
+        <span class="actor" data-js-dppx>---</span>
+        <div>Resolution: <span data-js-dpi>--</span></div>
+        <div class="orientation">Orientation: <span data-js-orientation>0</span>&deg;</div>
+         
+        <table class="chorus" cellspacing="0">
+          <tr>
+            <td></td>
+            <td>CSS pixels</td>
+            <td>Actual pixels</td>
+          </tr>
+          <tr>
+            <td>viewport:</td>
+            <td><span data-js-viewport-v>---</span></td>
+            <td><span data-js-viewport-a>---</span></td>
+          </tr>
+          <tr>
+            <td>screen:</td>
+            <td><span data-js-screen-v>---</span></td>
+            <td><span data-js-screen-a>---</span></td>
+          </tr>
+        </table>        
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
