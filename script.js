@@ -7,7 +7,7 @@ var windowW = false;
 var windowH = false;
 
 // use window.matchMedia and loop downwards to find the pixel multiplier.
-// we use dppx becuase iOS only supports -webkit-min-device-pixel-ratio,
+// we use dppx because iOS only supports -webkit-min-device-pixel-ratio,
 // which doesn't allow dpi units (shame, that would have told an iPad from an iPad mini)
 var calcDPpx = function () {
     if (typeof window.devicePixelRatio !== "undefined") {
@@ -88,7 +88,7 @@ var reOrient = function () {
     });
 };
 
-// on page ready, initialise all the things.
+// on page ready, initialize all the things.
 (function ready(fn) {
     if (document.readyState != "loading") {
         calcDPpx();
